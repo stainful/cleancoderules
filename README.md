@@ -83,7 +83,7 @@ locations.forEach(l => doStuff(l));
 ```
 
 # Single Responsibility Principle
-Ideally every method, class or just any abstraction should only do one thing. So the only reason to change the abstraction is the change of requirements. I don't beleive in Open Closed Principle cause it overcomplicates thing, but follow the idea that we should mix levels of abstraction:
+Ideally every method, class or just any abstraction should only do one thing. So the only reason to change the abstraction is the change of requirements. I don't beleive in Open-Closed Principle cause it overcomplicates thing, but follow the idea that we shouldn't mix levels of abstractions:
 * _low level_
   - working with files
   - http requests
@@ -114,14 +114,14 @@ class ActiveDirectoryIntegration {
 ```
 
 # Avoid premature abstractions
-* Developer1 sees the code duplication, makes an abstractions, feels good about himself — he follows DRY
-* Developer2 sees the abstraction that doesn't fit his needs but decides it's needed. He adds an if/else condition
+* Developer1 sees the code duplication, makes an abstraction, feels good about himself — he follows DRY
+* Developer2 sees the abstraction that doesn't fit his needs but decides it's there's a reason for this abstraction to exist. He adds an if/else condition
 * Developer3 does the same
 * ...
-* You're now here and life's shit.
+* You're now here and life is shit.
 
 # Work in short iteractions to keep focus
-* Rewrite something from scratch is not a refactoring
+* Rewriting something from scratch is not a refactoring
 * Commit often
 * Hell yeah, TDD
 
